@@ -98,3 +98,108 @@
 //     );
 //   }
 // }
+
+// 3rd layout
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "layout_design",
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor:Color(0xFF9E00FF),
+        ),
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 150,
+                    height: 150,
+                    decoration: 
+                      BoxDecoration(borderRadius: BorderRadius.circular(20),
+                      color: Color(0xFF06FFA5),
+                    ),
+                  ),
+                  Container(
+                    width: 150,
+                    height: 150,
+                    decoration: 
+                      BoxDecoration(borderRadius: BorderRadius.circular(20),
+                      color: Color(0xFF06FFA5),
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                width: double.infinity,
+                height: 175,
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+                color: Color(0xFF06FFA5),
+                ),
+              ),
+              SizedBox(
+                height: 300,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          width: 130,
+                          height: 130,
+                          color: Color(0XFFFFE500),
+                          ),
+                        Container(
+                          width: 130,
+                          height: 130,
+                          color: Color(0XFFFFE500),
+                          ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 130,
+                            height: 80,
+                            color: Color(0Xff7752FE),
+                            ),
+                          Container(
+                            width: 130,
+                            height: 80,
+                            color: Color(0Xff7752FE),
+                            ),
+                          Container(
+                            width: 130,
+                            height: 80,
+                            color: Color(0Xff7752FE),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
+             ],
+          ),
+        ),
+
+      ),
+    );
+  }
+}
