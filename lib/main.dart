@@ -217,6 +217,9 @@ class MyApp extends StatelessWidget {
 
   //variable
   final double borderRadius = 10;
+  final double circleWidthAndHeight = 70;
+  final double containerHeight = 130;
+  final double containerWeight = 165;
 
   @override
   Widget build(BuildContext context) {
@@ -233,15 +236,15 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: 130,
+              SizedBox(
+                height: containerHeight,
                 width: double.infinity,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      height: 130,
-                      width: 165,
+                      height: containerHeight,
+                      width: containerWeight,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(borderRadius),
                         color: Color(0xff06FFA5),
@@ -252,7 +255,7 @@ class MyApp extends StatelessWidget {
                       children: [
                         Container(
                           height: 60,
-                          width: 165,
+                          width: containerWeight,
                           decoration: BoxDecoration(
                             color: Color(0xff06FFA5),
                             borderRadius: BorderRadius.circular(borderRadius),
@@ -260,7 +263,7 @@ class MyApp extends StatelessWidget {
                         ),
                         Container(
                           height: 60,
-                          width: 165,
+                          width: containerWeight,
                           decoration: BoxDecoration(
                             color: Color(0xffFFE500),
                             borderRadius: BorderRadius.circular(borderRadius),
@@ -272,7 +275,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 130 / 2,
+                height: containerHeight / 2,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(borderRadius),
@@ -280,98 +283,94 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 130 / 2,
+                height:containerHeight / 2,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(borderRadius),
                   color: Color(0xff06FFA5),
                 ),
               ),
-              Container(
-                height: 130 * 2,
+              SizedBox(
+                height: containerHeight * 2,
                 width: double.infinity,
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      height: containerHeight * 2,
+                      width: containerWeight,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(borderRadius),
+                        color: Color(0xffFFE500),
+                      ),
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
                         Container(
-                            height: 130*2,
-                            width: 165,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(borderRadius),
-                                color: Color(0xffFFE500),
-                            ),
+                          height: 70,
+                          width: containerWeight,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(borderRadius),
+                            color: Color(0xff7752fe),
+                          ),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                                Container(
-                                    height: 70,
-                                    width: 165,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(borderRadius),
-                                        color: Color(0xff7752fe),
-                                    ),
-                                ),
-                                Container(
-                                    height: 100,
-                                    width: 165,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(borderRadius),
-                                        color: Color(0xffFF9900),
-                                    ),
-                                ),
-                                Container(
-                                    height: 70,
-                                    width: 165,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(borderRadius),
-                                        color: Color(0xff7752fe),
-                                    ),
-                                ),
-                            ],
+                        Container(
+                          height: 100,
+                          width: containerWeight,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(borderRadius),
+                            color: Color(0xffFF9900),
+                          ),
                         ),
-                    ],
+                        Container(
+                          height: 70,
+                          width: containerWeight,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(borderRadius),
+                            color: Color(0xff7752fe),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-              Container(
-                height: 130 / 2,
+              SizedBox(
+                height: containerHeight / 2,
                 width: double.infinity,
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                        Container(
-                            width: 70,
-                            height: 70,
-                            decoration: BoxDecoration(
-                                color: Color(0xffCC00FF),
-                                borderRadius: BorderRadius.circular(100)
-                            ),
-                        ),
-                        Container(
-                            width: 70,
-                            height: 70,
-                            decoration: BoxDecoration(
-                                color: Color(0xffFFE500),
-                                borderRadius: BorderRadius.circular(100)
-                            ),
-                        ),
-                        Container(
-                            width: 70,
-                            height: 70,
-                            decoration: BoxDecoration(
-                                color: Color(0xff06FFA5),
-                                borderRadius: BorderRadius.circular(100)
-                            ),
-                        ),
-                        Container(
-                            width: 70,
-                            height: 70,
-                            decoration: BoxDecoration(
-                                color: Color(0xff9E00FF),
-                                borderRadius: BorderRadius.circular(100)
-                            ),
-                        ),
-                    ],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: circleWidthAndHeight,
+                      height: circleWidthAndHeight,
+                      decoration: BoxDecoration(
+                          color: Color(0xffCC00FF),
+                          borderRadius: BorderRadius.circular(100)),
+                    ),
+                    Container(
+                      width: circleWidthAndHeight,
+                      height: circleWidthAndHeight,
+                      decoration: BoxDecoration(
+                          color: Color(0xffFFE500),
+                          borderRadius: BorderRadius.circular(100)),
+                    ),
+                    Container(
+                      width: circleWidthAndHeight,
+                      height: circleWidthAndHeight,
+                      decoration: BoxDecoration(
+                          color: Color(0xff06FFA5),
+                          borderRadius: BorderRadius.circular(100)),
+                    ),
+                    Container(
+                      width: circleWidthAndHeight,
+                      height: circleWidthAndHeight,
+                      decoration: BoxDecoration(
+                          color: Color(0xff9E00FF),
+                          borderRadius: BorderRadius.circular(100)),
+                    ),
+                  ],
                 ),
               ),
             ],
