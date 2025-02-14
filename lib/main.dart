@@ -291,18 +291,88 @@ class MyApp extends StatelessWidget {
                 height: 130 * 2,
                 width: double.infinity,
                 child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                         Container(
-
+                            height: 130*2,
+                            width: 165,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(borderRadius),
+                                color: Color(0xffFFE500),
+                            ),
                         ),
-                        Column(),
+                        Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                                Container(
+                                    height: 70,
+                                    width: 165,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(borderRadius),
+                                        color: Color(0xff7752fe),
+                                    ),
+                                ),
+                                Container(
+                                    height: 100,
+                                    width: 165,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(borderRadius),
+                                        color: Color(0xffFF9900),
+                                    ),
+                                ),
+                                Container(
+                                    height: 70,
+                                    width: 165,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(borderRadius),
+                                        color: Color(0xff7752fe),
+                                    ),
+                                ),
+                            ],
+                        ),
                     ],
                 ),
               ),
               Container(
                 height: 130 / 2,
                 width: double.infinity,
-                color: Color(0xff06FFA5),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                        Container(
+                            width: 70,
+                            height: 70,
+                            decoration: BoxDecoration(
+                                color: Color(0xffCC00FF),
+                                borderRadius: BorderRadius.circular(100)
+                            ),
+                        ),
+                        Container(
+                            width: 70,
+                            height: 70,
+                            decoration: BoxDecoration(
+                                color: Color(0xffFFE500),
+                                borderRadius: BorderRadius.circular(100)
+                            ),
+                        ),
+                        Container(
+                            width: 70,
+                            height: 70,
+                            decoration: BoxDecoration(
+                                color: Color(0xff06FFA5),
+                                borderRadius: BorderRadius.circular(100)
+                            ),
+                        ),
+                        Container(
+                            width: 70,
+                            height: 70,
+                            decoration: BoxDecoration(
+                                color: Color(0xff9E00FF),
+                                borderRadius: BorderRadius.circular(100)
+                            ),
+                        ),
+                    ],
+                ),
               ),
             ],
           ),
