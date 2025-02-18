@@ -278,6 +278,140 @@
 // }
 
 //layout 6
+// import 'package:flutter/material.dart';
+
+// void main(){
+//   runApp(MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "layout 6",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.symmetric(
+//             horizontal: 15,
+//           ),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               Container(
+//                 height: 300,
+//                 width: double.infinity,
+//                 decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+//                 color: Color(0xff85FFD3),
+//                 ),
+//                 padding: EdgeInsets.symmetric(
+//                   vertical: 20,
+//                   horizontal: 10,
+//                 ),
+//                 child: Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text("flutter is an open source",
+//                     style: TextStyle(
+//                       fontSize: 22,
+//                       fontWeight: FontWeight.w700
+//                     ),
+//                     ),
+//                     SizedBox(
+//                       height: 20,
+//                     ),
+//                     Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+//                      style: TextStyle(
+//                       fontSize: 18,
+//                       fontWeight: FontWeight.w400
+//                     ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//                   height: 165,
+//                   width: double.infinity,
+//                   decoration: BoxDecoration(
+//                     color: Color(0xffFFE500),
+//                     borderRadius: BorderRadius.circular(20),
+//                   ),
+//                   padding: EdgeInsets.symmetric(
+//                     vertical: 10,
+//                     horizontal: 20,
+//                   ),
+//                   child: Column(
+//                     children: [
+//                       Row(
+//                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                         children: [
+//                           Text("flutter is an open source",
+//                           style: TextStyle(
+//                             fontSize: 20,
+//                             fontWeight: FontWeight.w700
+//                           ),),
+//                           Icon(Icons.bookmark,
+//                           ),
+//                         ],
+//                       ),
+//                       SizedBox(
+//                         height: 5,
+//                       ),
+//                       Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+//                       style: TextStyle(
+//                             fontSize: 15,
+//                             fontWeight: FontWeight.w400
+//                           ),
+//                         ),   
+//                     ],
+//                   ),
+//                 ),
+//                 Container(
+//                   height: 165,
+//                   width: double.infinity,
+//                   decoration: BoxDecoration(
+//                     color: Color(0xffFFE500),
+//                     borderRadius: BorderRadius.circular(20),
+//                   ),
+//                   padding: EdgeInsets.symmetric(
+//                     vertical: 10,
+//                     horizontal: 20,
+//                   ),
+//                   child: Column(
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Text("flutter is an open source",
+//                       style: TextStyle(
+//                         fontSize: 20,
+//                         fontWeight: FontWeight.w700
+//                       ),),
+//                       SizedBox(
+//                         height: 5,
+//                       ),
+//                       Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+//                       style: TextStyle(
+//                             fontSize: 15,
+//                             fontWeight: FontWeight.w400
+//                           ),
+//                         ),   
+//                     ],
+//                   ),
+//                 ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+//laouut 7
+
 import 'package:flutter/material.dart';
 
 void main(){
@@ -287,122 +421,92 @@ void main(){
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
+  //variable
+  final double smallCntainerWidthAndHeight = 150;
+  final double mainCointainerWidthAndHeight=350;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "layout 6",
+      title: "layout 7",
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xff9E00FF),
         ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 15,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 300,
-                width: double.infinity,
-                decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
-                color: Color(0xff85FFD3),
-                ),
-                padding: EdgeInsets.symmetric(
-                  vertical: 20,
-                  horizontal: 10,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("flutter is an open source",
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w700
-                    ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
-                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w400
-                    ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                  height: 165,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Color(0xffFFE500),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  padding: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 20,
-                  ),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("flutter is an open source",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700
-                          ),),
-                          Icon(Icons.bookmark,
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
-                      style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400
-                          ),
-                        ),   
-                    ],
-                  ),
-                ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              children: [
                 Container(
-                  height: 165,
+                  height: 310,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0xffFFE500),
                     borderRadius: BorderRadius.circular(20),
+                    color: Color(0xff85FFD3)
                   ),
                   padding: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 20,
+                    horizontal: 10,
+                    vertical: 20, 
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("flutter is an open source",
+                      Text("Flutter is an open Source",
                       style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700
-                      ),),
-                      SizedBox(
-                        height: 5,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700,
                       ),
-                      Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                      ),
+                      SizedBox(
+                        height: 10
+                      ),
+                      Text("lutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
                       style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                      ),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: smallCntainerWidthAndHeight,
+                            width: smallCntainerWidthAndHeight,
+                            decoration: BoxDecoration(
+                              color: Color(0xff8E8FFA),
+                              borderRadius: BorderRadius.circular(20)
+                            ),
                           ),
-                        ),   
+                          Container(
+                            height: smallCntainerWidthAndHeight,
+                            width: smallCntainerWidthAndHeight,
+                            decoration: BoxDecoration(
+                              color: Color(0xff8E8FFA),
+                              borderRadius: BorderRadius.circular(20)
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
-            ],
+                Container(
+                  width: double.infinity,
+                  height: mainCointainerWidthAndHeight * 1.5,
+                  decoration: BoxDecoration(
+                    color: Color(0xffFFE500),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                )
+              
+              ],
+            ),
           ),
         ),
       ),
