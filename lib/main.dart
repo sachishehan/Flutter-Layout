@@ -206,171 +206,67 @@
 
 //4th laout
 
+// 
+
+
+//5th layout
 import 'package:flutter/material.dart';
 
-void main() {
+void main(){
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  //variable
-  final double borderRadius = 10;
-  final double circleWidthAndHeight = 70;
-  final double containerHeight = 130;
-  final double containerWeight = 165;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "layout 4",
+      title: "Layout 5",
       home: Scaffold(
-        backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Color(0xFFFFE500),
+          backgroundColor: Color(0xff9E00FF),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 20,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SizedBox(
-                height: containerHeight,
+              Container(
+                padding: EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 10,
+                ),
                 width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: containerHeight,
-                      width: containerWeight,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(borderRadius),
-                        color: Color(0xff06FFA5),
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: 60,
-                          width: containerWeight,
-                          decoration: BoxDecoration(
-                            color: Color(0xff06FFA5),
-                            borderRadius: BorderRadius.circular(borderRadius),
-                          ),
-                        ),
-                        Container(
-                          height: 60,
-                          width: containerWeight,
-                          decoration: BoxDecoration(
-                            color: Color(0xffFFE500),
-                            borderRadius: BorderRadius.circular(borderRadius),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                height: 300,
+                color: Color(0xff06FFA5),
+                child: Text(
+                  "my name is sachintha shehan.i am looking for software engineer internship.flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
               Container(
-                height: containerHeight / 2,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(borderRadius),
-                  color: Color(0xffCC00FF),
+                padding: EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 10,
                 ),
-              ),
-              Container(
-                height:containerHeight / 2,
                 width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(borderRadius),
-                  color: Color(0xff06FFA5),
-                ),
-              ),
-              SizedBox(
-                height: containerHeight * 2,
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: containerHeight * 2,
-                      width: containerWeight,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(borderRadius),
-                        color: Color(0xffFFE500),
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: 70,
-                          width: containerWeight,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(borderRadius),
-                            color: Color(0xff7752fe),
-                          ),
-                        ),
-                        Container(
-                          height: 100,
-                          width: containerWeight,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(borderRadius),
-                            color: Color(0xffFF9900),
-                          ),
-                        ),
-                        Container(
-                          height: 70,
-                          width: containerWeight,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(borderRadius),
-                            color: Color(0xff7752fe),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: containerHeight / 2,
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      width: circleWidthAndHeight,
-                      height: circleWidthAndHeight,
-                      decoration: BoxDecoration(
-                          color: Color(0xffCC00FF),
-                          borderRadius: BorderRadius.circular(100)),
-                    ),
-                    Container(
-                      width: circleWidthAndHeight,
-                      height: circleWidthAndHeight,
-                      decoration: BoxDecoration(
-                          color: Color(0xffFFE500),
-                          borderRadius: BorderRadius.circular(100)),
-                    ),
-                    Container(
-                      width: circleWidthAndHeight,
-                      height: circleWidthAndHeight,
-                      decoration: BoxDecoration(
-                          color: Color(0xff06FFA5),
-                          borderRadius: BorderRadius.circular(100)),
-                    ),
-                    Container(
-                      width: circleWidthAndHeight,
-                      height: circleWidthAndHeight,
-                      decoration: BoxDecoration(
-                          color: Color(0xff9E00FF),
-                          borderRadius: BorderRadius.circular(100)),
-                    ),
-                  ],
+                height: 300,
+                color: Color(0xffFFE500),
+                child: Text(
+                  "my name is sachintha shehan.i am looking for software engineer internship.flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ],
