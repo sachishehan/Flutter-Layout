@@ -503,8 +503,99 @@ class MyApp extends StatelessWidget {
                     color: Color(0xffFFE500),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                )
-              
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 20,
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("flutter is an open source",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          ),
+                          Icon(Icons.bookmark),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w400,
+                      ),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Container(
+                        height: 300,
+                        decoration: BoxDecoration(
+                          color: Color(0xff9E00FF),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        padding: EdgeInsets.all(20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("flutter is an open source",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                            ),
+                            ),
+                                SizedBox(
+                              height: 15,
+                            ),
+                            Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white,
+                            ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  width: 80,
+                                  height: 80,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff06FFA5),
+                                    borderRadius: BorderRadius.circular(20),
+                                    ),
+                                ),
+                                Container(
+                                  width: 80,
+                                  height: 80,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff06FFA5),
+                                    borderRadius: BorderRadius.circular(20),
+                                    ),
+                                ),
+                                Container(
+                                  width: 80,
+                                  height: 80,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff06FFA5),
+                                    borderRadius: BorderRadius.circular(20),
+                                    ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
