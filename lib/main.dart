@@ -210,6 +210,74 @@
 
 
 //5th layout
+// import 'package:flutter/material.dart';
+
+// void main(){
+//   runApp(MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "Layout 5",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.symmetric(
+//             horizontal: 10,
+//             vertical: 20,
+//           ),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               Container(
+//                 padding: EdgeInsets.symmetric(
+//                   vertical: 20,
+//                   horizontal: 10,
+//                 ),
+//                 width: double.infinity,
+//                 height: 300,
+//                 color: Color(0xff06FFA5),
+//                 child: Text(
+//                   "my name is sachintha shehan.i am looking for software engineer internship.flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015",
+//                   style: TextStyle(
+//                     fontSize: 18,
+//                     fontWeight: FontWeight.w500,
+//                   ),
+//                 ),
+//               ),
+//               Container(
+//                 padding: EdgeInsets.symmetric(
+//                   vertical: 20,
+//                   horizontal: 10,
+//                 ),
+//                 width: double.infinity,
+//                 height: 300,
+//                 color: Color(0xffFFE500),
+//                 child: Text(
+//                   "my name is sachintha shehan.i am looking for software engineer internship.flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+//                   style: TextStyle(
+//                     fontSize: 18,
+//                     fontWeight: FontWeight.w500,
+//                   ),
+//                   textAlign: TextAlign.center,
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+//layout 6
 import 'package:flutter/material.dart';
 
 void main(){
@@ -223,52 +291,117 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Layout 5",
+      title: "layout 6",
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xff9E00FF),
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 10,
-            vertical: 20,
+            horizontal: 15,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
+                height: 300,
+                width: double.infinity,
+                decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+                color: Color(0xff85FFD3),
+                ),
                 padding: EdgeInsets.symmetric(
                   vertical: 20,
                   horizontal: 10,
                 ),
-                width: double.infinity,
-                height: 300,
-                color: Color(0xff06FFA5),
-                child: Text(
-                  "my name is sachintha shehan.i am looking for software engineer internship.flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("flutter is an open source",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700
+                    ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                     style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w400
+                    ),
+                    ),
+                  ],
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(
-                  vertical: 20,
-                  horizontal: 10,
-                ),
-                width: double.infinity,
-                height: 300,
-                color: Color(0xffFFE500),
-                child: Text(
-                  "my name is sachintha shehan.i am looking for software engineer internship.flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                  height: 165,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Color(0xffFFE500),
+                    borderRadius: BorderRadius.circular(20),
                   ),
-                  textAlign: TextAlign.center,
+                  padding: EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("flutter is an open source",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700
+                          ),),
+                          Icon(Icons.bookmark,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                      style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w400
+                          ),
+                        ),   
+                    ],
+                  ),
                 ),
-              ),
+                Container(
+                  height: 165,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Color(0xffFFE500),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("flutter is an open source",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700
+                      ),),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text("flutter is an open source UI software developmnet kit created by Google.It is used to build natively complied applicaions.for mobile,web,and desktop from a single codebase.Flutter was first introduced in 2015.",
+                      style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w400
+                          ),
+                        ),   
+                    ],
+                  ),
+                ),
             ],
           ),
         ),
